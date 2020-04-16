@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Special+Elite&display=swap');
+
+.App {
+    text-align: center;   
+    font-family: 'Merriweather', serif;
+  }
+
+body {
+    background-color: #cccccc;
+    background-image: url("./img/mountains-bg3.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+}  
+
+.login-reg-box {
+  margin-left: 35%;
+  text-align: center; 
+  padding: 5%;
+  max-width: fit-content;
+  margin-top: 5em; 
+  border-radius: 2px;
+  background-color: rgba(123, 150, 180, 0.5);
+  
+}
+
+.button { 
+    background-color: rgb(78, 131, 231);
+    color: "white";
+    width: "140px";
+    border-radius: "3px";
+}
+
+.formInputs {
+  display: block;
+}
+
+.form {
+  margin: 2em;
+}
+
+.table {
+  margin: 5em;
+  text-align: center;
+}
+  
+.errorMessage {
+    color: rgb(224, 20, 20);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
+}
+
+.graph {
+  background: #FFFFFF;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);
+}
+
+#run-data-graph {
+  position: absolute;
+  left: 10rem;
+}
+
+#run-tracker-graph {
+  position: absolute;
+  right: 10rem;
+}
+
+.actionLinks {
+  color: rgb(37, 39, 39);
+}
+
+.navHeading {
+  font-size: 25px;
+  color: white;
+  position: absolute;
+  top: 32px;
+  left: 42%;
+}
+
+.navbar-brand {
+  font-family: 'Special Elite', cursive;
+  font-size: 40px;
+}
+
+.logo-heading {
+  font-family: 'Special Elite', cursive;
+  font-size: 40px;
+  color: white;
+  
+}
+
+.logo-heading:hover {
+  font-family: 'Special Elite', cursive;
+  font-size: 40px;
+  color: white;
+  text-decoration: underline;
+  
+}
+
+.title-heading {
+  position: absolute;
+  color: white;
+  top: 18px;
+  left: 40%;
+}
+
+
+.nav-link {
+  color: black;
+  font-variant: small-caps;
+}
+
+.nav-link:hover {
+  color: rgb(135, 171, 196);
+  text-decoration: underline;
+  text-decoration-color: rgb(135, 171, 196);
+  font-variant: small-caps;
+}
+
+.navMenu {
+  width: 400px;
+}
+
+#navMenu-explore {
+  color: #FFFFFF;
+  font-variant: small-caps;
+}
+
+#nav-pic {
+  height: 60px;
+  width: 60px;
+  mix-blend-mode: color-dodge;
+}
+
+#logout-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: white;
+}
+
+#greeting {
+  position: absolute;
+  top: 30px;
+  right: 150px;
+  color: rgb(255, 255, 255);
+}
