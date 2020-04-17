@@ -51,20 +51,21 @@ const userData = {
 render() {
     const { errors } = this.state;
 return (
-      <div className="login-reg-box">
+      <div className="container">
         <div style={{ marginTop: "4rem" }} className="row">
           <div className="col s8 offset-s2">
-           
+           <div className="login-reg-box">
             <div className="col s12" style={{ paddingLeft: "11.250px" }}>
               <h4>
                 <b>Login</b>
               </h4>
-            
+            <br />
             </div>
             <form noValidate onSubmit={this.onSubmit}>
               <div className="input-field col s12">
+              <label htmlFor="email">Email</label>
+              <br />
                 <input
-                 autoComplete="off"
                 placeholder="email"
                   onChange={this.onChange}
                   value={this.state.email}
@@ -75,15 +76,16 @@ return (
                     invalid: errors.email || errors.emailnotfound
                   })}
                 />
-                <label htmlFor="email">Email</label>
-                <span className="red-text">
+               <br />
+                <span className="errorMessage">
                   {errors.email}
                   {errors.emailnotfound}
                 </span>
               </div>
               <div className="input-field col s12">
+              <label htmlFor="password">Password</label>
+              <br />
                 <input
-                autoComplete="off"
                 placeholder="password"
                   onChange={this.onChange}
                   value={this.state.password}
@@ -94,12 +96,13 @@ return (
                     invalid: errors.password || errors.passwordincorrect
                   })}
                 />
-                <label htmlFor="password">Password</label>
-                <span className="red-text">
+              <br />
+                <span className="errorMessage">
                   {errors.password}
                   {errors.passwordincorrect}
                 </span>
               </div>
+              <br />
               <div className="col s12" style={{ paddingLeft: "11.250px" }}>
                 <button
                   style={{
@@ -117,11 +120,14 @@ return (
                 </button>
               </div>
             </form>
+            </div>
+            <br />
+            <br />
             <p className="grey-text text-darken-1">
                 Don't have an account? <Link to="/register">Register</Link>
               </p>
           </div>
-          <Link to="/" className="btn-flat waves-effect">
+          <Link to="/" className="back-home">
               Back to home
             </Link>
         </div>

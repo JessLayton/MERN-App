@@ -19,12 +19,24 @@ body {
   text-align: center; 
   padding: 5%;
   max-width: fit-content;
-  margin-top: 5em; 
+  margin-top: 3em; 
   border-radius: 2px;
   background-color: rgba(123, 150, 180, 0.5);
   
 }
 
+#reg-box {
+ 
+  margin-top: 0.5em; 
+  
+  
+}
+
+.back-home {
+  position: absolute;
+  left: 5em;
+  top: 20px;
+}
 .button { 
     background-color: rgb(78, 131, 231);
     color: "white";
@@ -65,6 +77,10 @@ body {
 #run-tracker-graph {
   position: absolute;
   right: 10rem;
+}
+
+#welcome {
+  color: rgba(63, 105, 139, 0.781);
 }
 
 .actionLinks {

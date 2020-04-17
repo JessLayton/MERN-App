@@ -51,18 +51,22 @@ render() {
     const { errors } = this.state;
 return (
   <div>
-      <div className="login-reg-form">
-        <div className="row">
-          <div className="col s8 offset-s2">
-          
+    <div className="container">
+    <div style={{ marginTop: "4rem" }} className="row">
+    <div className="col s8 offset-s2">
+           <div className="login-reg-box" id="reg-box">
             <div className="col s12" style={{ paddingLeft: "11.250px" }}>
-              <h4>
+            <h4>
                 <b>Register</b>
               </h4>
+              <br />
             </div>
             <form noValidate onSubmit={this.onSubmit}>
               <div className="input-field col s12">
+              <label htmlFor="name">Name</label>
+              <br />
                 <input
+                placeholder="name"
                   onChange={this.onChange}
                   value={this.state.name}
                   error={errors.name}
@@ -72,11 +76,14 @@ return (
                     invalid: errors.name
                   })}
                 />
-                <label htmlFor="name">Name</label>
-                <span className="red-text">{errors.name}</span>
+               <br />
+                <span className="errorMessage">{errors.name}</span>
               </div>
               <div className="input-field col s12">
+              <label htmlFor="email">Email</label>
+              <br />
                 <input
+                placeholder="email"
                   onChange={this.onChange}
                   value={this.state.email}
                   error={errors.email}
@@ -86,11 +93,14 @@ return (
                     invalid: errors.email
                   })}
                 />
-                <label htmlFor="email">Email</label>
-                <span className="red-text">{errors.email}</span>
+               <br />
+                <span className="errorMessage">{errors.email}</span>
               </div>
               <div className="input-field col s12">
+              <label htmlFor="password">Password</label>
+              <br />
                 <input
+                placeholder="password"
                   onChange={this.onChange}
                   value={this.state.password}
                   error={errors.password}
@@ -100,11 +110,14 @@ return (
                     invalid: errors.password
                   })}
                 />
-                <label htmlFor="password">Password</label>
-                <span className="red-text">{errors.password}</span>
+               <br />
+                <span className="errorMessage">{errors.password}</span>
               </div>
               <div className="input-field col s12">
+              <label htmlFor="password2">Confirm Password</label>
+              <br />
                 <input
+                placeholder="password"
                   onChange={this.onChange}
                   value={this.state.password2}
                   error={errors.password2}
@@ -114,9 +127,10 @@ return (
                     invalid: errors.password2
                   })}
                 />
-                <label htmlFor="password2">Confirm Password</label>
-                <span className="red-text">{errors.password2}</span>
+               <br />
+                <span className="errorMessage">{errors.password2}</span>
               </div>
+              <br />
               <div className="col s12" style={{ paddingLeft: "11.250px" }}>
                 <button
                   style={{
@@ -134,6 +148,8 @@ return (
                 </button>
               </div>
             </form>
+            </div>
+            <br />
             <p className="grey-text text-darken-1">
                 Already have an account? <Link to="/login">Log in</Link>
               </p>
@@ -141,8 +157,10 @@ return (
         
         </div>
        
-      </div> 
-      <Link to="/" className="btn-flat waves-effect">
+ 
+     
+      </div>
+       <Link to="/" className="back-home">
               Back to home
             </Link>
       </div>

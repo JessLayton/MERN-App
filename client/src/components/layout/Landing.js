@@ -8,7 +8,6 @@ import "../../App.css";
 class Landing extends Component {
 
   componentDidMount() {
-    // If logged in and user navigates to Register page, should redirect them to dashboard
     if (this.props.auth.isAuthenticated) {
       this.props.history.push("/dashboard");
     }
@@ -22,7 +21,7 @@ class Landing extends Component {
             <p className="logo-heading">
               RUN TRACKER
             </p>
-            <h4>
+            <h4 id="welcome">
             WELCOME
             </h4>
             <br />
